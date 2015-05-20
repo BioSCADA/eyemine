@@ -1,0 +1,84 @@
+# Project: Eyemine
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = 
+OBJ  = source/FaceDetect.o source/FaceHeuristics.o source/JavaStartInterface.o source/LeftContours.o source/LeftEyeDetect.o source/LeftEyeTrack.o source/MainInterface.o source/MouthContours.o source/MouthDetect.o source/MouthTrack.o source/MultiCamera.o source/NoseDetect.o source/NoseTrack.o source/RightCamShift.o source/RightContours.o source/RightEyeDetect.o source/RightEyeTrack.o source/RightHough.o source/TrackerDetector.o $(RES)
+LINKOBJ  = source/FaceDetect.o source/FaceHeuristics.o source/JavaStartInterface.o source/LeftContours.o source/LeftEyeDetect.o source/LeftEyeTrack.o source/MainInterface.o source/MouthContours.o source/MouthDetect.o source/MouthTrack.o source/MultiCamera.o source/NoseDetect.o source/NoseTrack.o source/RightCamShift.o source/RightContours.o source/RightEyeDetect.o source/RightEyeTrack.o source/RightHough.o source/TrackerDetector.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -L"C:/OpenCV2.1/lib" -lcxcore210 -lcv210 -lcvaux210 -lhighgui210 -lml210 -lws2_32  -g3 
+INCS =  -I"C:/Dev-Cpp/include"  -I"C:/OpenCV2.1/include/opencv"  -I"I:/dev-cpp/Eyemine/header" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"C:/OpenCV2.1/include/opencv"  -I"I:/dev-cpp/Eyemine/header" 
+BIN  = Eyemine.exe
+CXXFLAGS = $(CXXINCS)   -lcxcore210 -lcv210 -lcvaux210 -lhighgui210 -lml210 -lws2_32 -g3
+CFLAGS = $(INCS)   -lcxcore210 -lcv210 -lcvaux210 -lhighgui210 -lml210 -lws2_32 -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Eyemine.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Eyemine.exe" $(LIBS)
+
+source/FaceDetect.o: source/FaceDetect.cpp
+	$(CPP) -c source/FaceDetect.cpp -o source/FaceDetect.o $(CXXFLAGS)
+
+source/FaceHeuristics.o: source/FaceHeuristics.cpp
+	$(CPP) -c source/FaceHeuristics.cpp -o source/FaceHeuristics.o $(CXXFLAGS)
+
+source/JavaStartInterface.o: source/JavaStartInterface.cpp
+	$(CPP) -c source/JavaStartInterface.cpp -o source/JavaStartInterface.o $(CXXFLAGS)
+
+source/LeftContours.o: source/LeftContours.cpp
+	$(CPP) -c source/LeftContours.cpp -o source/LeftContours.o $(CXXFLAGS)
+
+source/LeftEyeDetect.o: source/LeftEyeDetect.cpp
+	$(CPP) -c source/LeftEyeDetect.cpp -o source/LeftEyeDetect.o $(CXXFLAGS)
+
+source/LeftEyeTrack.o: source/LeftEyeTrack.cpp
+	$(CPP) -c source/LeftEyeTrack.cpp -o source/LeftEyeTrack.o $(CXXFLAGS)
+
+source/MainInterface.o: source/MainInterface.cpp
+	$(CPP) -c source/MainInterface.cpp -o source/MainInterface.o $(CXXFLAGS)
+
+source/MouthContours.o: source/MouthContours.cpp
+	$(CPP) -c source/MouthContours.cpp -o source/MouthContours.o $(CXXFLAGS)
+
+source/MouthDetect.o: source/MouthDetect.cpp
+	$(CPP) -c source/MouthDetect.cpp -o source/MouthDetect.o $(CXXFLAGS)
+
+source/MouthTrack.o: source/MouthTrack.cpp
+	$(CPP) -c source/MouthTrack.cpp -o source/MouthTrack.o $(CXXFLAGS)
+
+source/MultiCamera.o: source/MultiCamera.cpp
+	$(CPP) -c source/MultiCamera.cpp -o source/MultiCamera.o $(CXXFLAGS)
+
+source/NoseDetect.o: source/NoseDetect.cpp
+	$(CPP) -c source/NoseDetect.cpp -o source/NoseDetect.o $(CXXFLAGS)
+
+source/NoseTrack.o: source/NoseTrack.cpp
+	$(CPP) -c source/NoseTrack.cpp -o source/NoseTrack.o $(CXXFLAGS)
+
+source/RightCamShift.o: source/RightCamShift.cpp
+	$(CPP) -c source/RightCamShift.cpp -o source/RightCamShift.o $(CXXFLAGS)
+
+source/RightContours.o: source/RightContours.cpp
+	$(CPP) -c source/RightContours.cpp -o source/RightContours.o $(CXXFLAGS)
+
+source/RightEyeDetect.o: source/RightEyeDetect.cpp
+	$(CPP) -c source/RightEyeDetect.cpp -o source/RightEyeDetect.o $(CXXFLAGS)
+
+source/RightEyeTrack.o: source/RightEyeTrack.cpp
+	$(CPP) -c source/RightEyeTrack.cpp -o source/RightEyeTrack.o $(CXXFLAGS)
+
+source/RightHough.o: source/RightHough.cpp
+	$(CPP) -c source/RightHough.cpp -o source/RightHough.o $(CXXFLAGS)
+
+source/TrackerDetector.o: source/TrackerDetector.cpp
+	$(CPP) -c source/TrackerDetector.cpp -o source/TrackerDetector.o $(CXXFLAGS)

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>header/DLLInterface.h</itemPath>
+      <itemPath>header/Demand.h</itemPath>
+      <itemPath>header/FaceDetect.h</itemPath>
+      <itemPath>header/FaceHeuristics.h</itemPath>
+      <itemPath>header/IOGlobals.h</itemPath>
+      <itemPath>header/JavaStartInterface.h</itemPath>
+      <itemPath>header/LeftContours.h</itemPath>
+      <itemPath>header/LeftEyeDetect.h</itemPath>
+      <itemPath>header/LeftEyeTrack.h</itemPath>
+      <itemPath>header/MouthContours.h</itemPath>
+      <itemPath>header/MouthDetect.h</itemPath>
+      <itemPath>header/MouthTrack.h</itemPath>
+      <itemPath>header/MultiCamera.h</itemPath>
+      <itemPath>header/NoseDetect.h</itemPath>
+      <itemPath>header/NoseTrack.h</itemPath>
+      <itemPath>header/RightCamShift.h</itemPath>
+      <itemPath>header/RightContours.h</itemPath>
+      <itemPath>header/RightEyeDetect.h</itemPath>
+      <itemPath>header/RightEyeTrack.h</itemPath>
+      <itemPath>header/RightHough.h</itemPath>
+      <itemPath>header/TrackerDetector.h</itemPath>
+      <itemPath>header/stdafx.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>source/Eyemine.cpp</itemPath>
+      <itemPath>source/FaceDetect.cpp</itemPath>
+      <itemPath>source/FaceHeuristics.cpp</itemPath>
+      <itemPath>source/JavaStartInterface.cpp</itemPath>
+      <itemPath>source/LeftContours.cpp</itemPath>
+      <itemPath>source/LeftEyeDetect.cpp</itemPath>
+      <itemPath>source/LeftEyeTrack.cpp</itemPath>
+      <itemPath>source/MouthContours.cpp</itemPath>
+      <itemPath>source/MouthDetect.cpp</itemPath>
+      <itemPath>source/MouthTrack.cpp</itemPath>
+      <itemPath>source/MultiCamera.cpp</itemPath>
+      <itemPath>source/NoseDetect.cpp</itemPath>
+      <itemPath>source/NoseTrack.cpp</itemPath>
+      <itemPath>source/RightCamShift.cpp</itemPath>
+      <itemPath>source/RightContours.cpp</itemPath>
+      <itemPath>source/RightEyeDetect.cpp</itemPath>
+      <itemPath>source/RightEyeTrack.cpp</itemPath>
+      <itemPath>source/RightHough.cpp</itemPath>
+      <itemPath>source/TrackerDetector.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>header</Elem>
+    <Elem>source</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>gcc</commandlineTool>
+          <incDir>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>header</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>header</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/lib</pElem>
+            <pElem>/usr/local/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs opencv`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Debian</packType>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}"
+                            from="${OUTPUT_PATH}"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+        <packInfoList>
+          <packInfoListElem name="Package" value="eyemine" mandatory="true"/>
+          <packInfoListElem name="Version" value="1.0" mandatory="true"/>
+          <packInfoListElem name="Architecture" value="amd64" mandatory="false"/>
+          <packInfoListElem name="Maintainer" value="diego" mandatory="false"/>
+          <packInfoListElem name="Description" value="..." mandatory="false"/>
+        </packInfoList>
+      </packaging>
+      <item path="header/DLLInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/Demand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/FaceDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/FaceHeuristics.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IOGlobals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/JavaStartInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/LeftContours.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/LeftEyeDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/LeftEyeTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MouthContours.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MouthDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MouthTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MultiCamera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/NoseDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/NoseTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightCamShift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightContours.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightEyeDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightEyeTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightHough.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/TrackerDetector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Eyemine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/FaceDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/FaceHeuristics.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/JavaStartInterface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/LeftContours.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/LeftEyeDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/LeftEyeTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MouthContours.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MouthDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MouthTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MultiCamera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/NoseDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/NoseTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightCamShift.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightContours.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightEyeDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightEyeTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightHough.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/TrackerDetector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>header</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>header</pElem>
+          </incDir>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/lib</pElem>
+            <pElem>/usr/local/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs opencv`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="header/DLLInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/Demand.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/FaceDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/FaceHeuristics.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/IOGlobals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/JavaStartInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/LeftContours.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/LeftEyeDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/LeftEyeTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MouthContours.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MouthDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MouthTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/MultiCamera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/NoseDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/NoseTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightCamShift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightContours.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightEyeDetect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightEyeTrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/RightHough.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/TrackerDetector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="header/stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/Eyemine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/FaceDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/FaceHeuristics.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/JavaStartInterface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/LeftContours.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/LeftEyeDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/LeftEyeTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MouthContours.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MouthDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MouthTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/MultiCamera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/NoseDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/NoseTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightCamShift.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightContours.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightEyeDetect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightEyeTrack.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/RightHough.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="source/TrackerDetector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
